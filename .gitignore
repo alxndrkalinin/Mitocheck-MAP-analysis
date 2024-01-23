@@ -1,0 +1,14 @@
+# removing python's caching files
+*.pyc
+
+# remove log files
+.log
+
+# data files as they are large
+*.parquet
+data/raw/normalized_data
+data/raw/3.normalized_data.zip
+data/raw/training_data.csv.gz
+
+# storage folder that was used to store files and not delete them
+_bak

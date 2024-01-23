@@ -1,0 +1,40 @@
+DEBUG:2023-12-05 11:59:46,904:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 11:59:47,277:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/blob/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 2064
+INFO:2023-12-05 11:59:47,278:root:Downloading control dataset: 0
+DEBUG:2023-12-05 12:01:41,280:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 12:01:41,481:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 302 0
+DEBUG:2023-12-05 12:01:41,482:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2023-12-05 12:01:41,505:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 38934164
+INFO:2023-12-05 12:01:41,508:root:Downloading control dataset: 37
+DEBUG:2023-12-05 12:01:55,818:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 12:01:55,955:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 302 0
+DEBUG:2023-12-05 12:01:55,956:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2023-12-05 12:01:55,981:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 38934164
+INFO:2023-12-05 12:01:55,983:root:Downloading control dataset: 37
+DEBUG:2023-12-05 13:42:16,615:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 13:42:16,861:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 302 0
+DEBUG:2023-12-05 13:42:16,863:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2023-12-05 13:42:18,141:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 38934164
+INFO:2023-12-05 13:42:18,144:root:Downloading control dataset: 37
+INFO:2023-12-05 13:45:14,336:root:Downloading trianing set data from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz
+DEBUG:2023-12-05 13:45:14,339:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 13:45:14,596:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 302 0
+DEBUG:2023-12-05 13:45:14,598:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2023-12-05 13:45:14,620:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 38934164
+INFO:2023-12-05 13:45:14,624:root:Downloading control dataset: 37
+INFO:2023-12-05 13:45:22,800:root:Downloading trianing set data from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz
+DEBUG:2023-12-05 13:45:22,802:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2023-12-05 13:45:23,035:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 302 0
+DEBUG:2023-12-05 13:45:23,036:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2023-12-05 13:45:23,059:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 200 38934164
+INFO:2023-12-05 13:45:23,061:root:Downloading control dataset: 37
+INFO:2023-12-05 13:45:49,870:root:Downloading control dataset from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz
+DEBUG:2023-12-05 13:45:49,872:urllib3.connectionpool:Starting new HTTPS connection (1): zenodo.org:443
+DEBUG:2023-12-05 13:45:50,585:urllib3.connectionpool:https://zenodo.org:443 "GET /records/7967386/files/3.normalize_data__normalized_data.zip?download=1 HTTP/1.1" 200 18097771757
+INFO:2023-12-05 13:45:50,589:root:Downloading control dataset: 17259
+INFO:2023-12-05 14:25:58,651:root:Unzipping control dataset into: {}
+INFO:2023-12-05 14:26:05,232:root:Unzipping control dataset into: {}
+INFO:2023-12-05 14:26:23,023:root:Unzipping control dataset into: {}
+INFO:2023-12-05 14:26:54,277:root:Unzipping control dataset into: {}
+INFO:2023-12-05 14:27:42,942:root:Unzipping control dataset into: {}
+INFO:2023-12-05 14:29:04,401:root:Unzipping control dataset into: {}
