@@ -32,7 +32,7 @@ import requests
 log_file_name = pathlib.Path("download_log.log")
 chunk_size_download = 81920
 control_url = ""
-train_url = "https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz"
+train_url = "https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data__no_ic.csv.gz"
 control_url = "https://zenodo.org/records/7967386/files/3.normalize_data__normalized_data.zip?download=1"
 
 # output paths
@@ -59,7 +59,7 @@ logging.info(f"Downloading trianing set data from: {train_url}")
 with requests.get(train_url, stream=True) as r:
     # raise error if the there's an error
     r.raise_for_status()
-    logging.info(f"Downloading training dataset: {r.headers.get('Content-Length')}MB")
+    logging.info(f"Downloading training dataset: {r.headers.get('Content-Length')} bytes")
 
     # creating a file to write the downloaded contents in chunks
     with open(train_out_path, mode="wb") as out_file:
@@ -75,7 +75,7 @@ logging.info(f"Downloading control dataset from: {train_url}")
 with requests.get(control_url, stream=True) as r:
     # raise error if the there's an error
     r.raise_for_status()
-    logging.info(f"Downloading control dataset: {r.headers.get('Content-Length')}MB")
+    logging.info(f"Downloading control dataset: {r.headers.get('Content-Length')} bytes")
 
     # creating a file to write the downloaded contents in chunks
     with open(control_out_path, mode="wb") as out_file:

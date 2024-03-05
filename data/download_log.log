@@ -38,3 +38,17 @@ INFO:2023-12-05 14:26:23,023:root:Unzipping control dataset into: {}
 INFO:2023-12-05 14:26:54,277:root:Unzipping control dataset into: {}
 INFO:2023-12-05 14:27:42,942:root:Unzipping control dataset into: {}
 INFO:2023-12-05 14:29:04,401:root:Unzipping control dataset into: {}
+INFO:2024-02-04 15:52:03,338:root:Downloading trianing set data from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz
+DEBUG:2024-02-04 15:52:03,349:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2024-02-04 15:52:03,743:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data.csv.gz HTTP/1.1" 404 None
+INFO:2024-02-04 15:57:39,759:root:Downloading trianing set data from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data__no_ic.csv.gz
+DEBUG:2024-02-04 15:57:39,772:urllib3.connectionpool:Starting new HTTPS connection (1): github.com:443
+DEBUG:2024-02-04 15:57:40,007:urllib3.connectionpool:https://github.com:443 "GET /wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data__no_ic.csv.gz HTTP/1.1" 302 0
+DEBUG:2024-02-04 15:57:40,011:urllib3.connectionpool:Starting new HTTPS connection (1): raw.githubusercontent.com:443
+DEBUG:2024-02-04 15:57:40,290:urllib3.connectionpool:https://raw.githubusercontent.com:443 "GET /wayscience/mitocheck_data/main/3.normalize_data/normalized_data/training_data__no_ic.csv.gz HTTP/1.1" 200 38682015
+INFO:2024-02-04 15:57:40,291:root:Downloading training dataset: 38682015MB
+INFO:2024-02-04 15:57:40,521:root:Downloading control dataset from: https://github.com/wayscience/mitocheck_data/raw/main/3.normalize_data/normalized_data/training_data__no_ic.csv.gz
+DEBUG:2024-02-04 15:57:40,524:urllib3.connectionpool:Starting new HTTPS connection (1): zenodo.org:443
+DEBUG:2024-02-04 15:57:41,286:urllib3.connectionpool:https://zenodo.org:443 "GET /records/7967386/files/3.normalize_data__normalized_data.zip?download=1 HTTP/1.1" 200 18097771757
+INFO:2024-02-04 15:57:41,292:root:Downloading control dataset: 18097771757MB
+INFO:2024-02-04 16:05:49,819:root:Unzipping control dataset into: /dgx1nas1/storage/data/akalinin/projects/Mitocheck-MAP-analysis/data/raw
