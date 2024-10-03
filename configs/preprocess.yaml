@@ -1,0 +1,8 @@
+data_dir: ../data/
+training_singlecell_data: raw/training_data__no_ic.csv.gz
+neg_control_data: raw/normalized_data/negative_control_data.csv.gz
+map_out_dir: processed/mAP_scores/
+feature_selection_operations:
+  - variance_threshold
+  - correlation_threshold
+  - drop_na_columns

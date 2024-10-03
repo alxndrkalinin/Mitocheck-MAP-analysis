@@ -1,5 +1,6 @@
 # removing python's caching files
 *.pyc
+.ipynb_checkpoints
 
 # remove log files
 .log
@@ -9,6 +10,7 @@
 data/raw/normalized_data
 data/raw/3.normalized_data.zip
 data/raw/training_data.csv.gz
+data/raw/training_data__no_ic.csv.gz
 
 # storage folder that was used to store files and not delete them
 _bak

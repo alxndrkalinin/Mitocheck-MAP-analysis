@@ -5,10 +5,37 @@ Contains utility functions to import into the analysis
 `split_data()` was develoepd by @roshankern:
 https://github.com/WayScience/mitocheck_data/blob/63f37859d993b8de25fefe1cb8a3aac421c3e08a/utils/load_utils.py#L84
 """
-from typing import Optional
+from typing import Optional, Union
+
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from omegaconf import OmegaConf
+
+
+def load_config(config_path: Union[Path, str]) -> dict:
+    """
+    Load configs from a directory or file.
+
+    Parameters
+    ----------
+    config_path : Union[Path, str]
+        Path to config directory or file.
+
+    Returns
+    -------
+    dict
+        Dictionary of configs.
+    """
+    config_path = Path(config_path)
+    if config_path.is_dir():
+        config = [OmegaConf.load(sub_conf) for sub_conf in config_path.glob("*.yaml")]
+        config = OmegaConf.merge(*config)
+    else:
+        config = OmegaConf.load(config_path)
+
+    return OmegaConf.to_object(config)
 
 
 def split_data(pycytominer_output: pd.DataFrame, dataset: str = "CP_and_DP"):
